@@ -1,0 +1,8 @@
+extends layout
+block title
+    h1= "Add a something!"
+block content
+    form(action="/answer" method="POST")
+        p Form:
+            input(type="text" name="title" placeholder="" )
+            input(type="submit" value="send")
